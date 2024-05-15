@@ -25,16 +25,18 @@
     height: 3px;
     width: 9px;
     background: var(--primary-color);
-    animation: blink .7s forwards infinite;
+    animation: blink 0.7s forwards infinite;
 }
 
-@keyframes blink  {
+@keyframes blink {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0.01;
     }
+
     100% {
         opacity: 1;
     }
