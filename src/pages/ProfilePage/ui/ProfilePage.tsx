@@ -1,6 +1,7 @@
+import { Country } from 'entities/Country';
+import { Currency } from 'entities/Currency';
 import {
     fetchProfileData,
-    getProfileData,
     getProfileError,
     getProfileForm,
     getProfileIsLoading,
@@ -17,8 +18,6 @@ import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Currency } from 'entities/Currency';
-import { Country } from 'entities/Country';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
@@ -51,7 +50,9 @@ const ProfilePage = memo((props: ProfilePageProps) => {
     };
 
     useEffect(() => {
-        dispatch(fetchProfileData());
+        if (__PROJECT__ !== 'storybook') {
+            dispatch(fetchProfileData());
+        }
     }, [dispatch]);
 
     const onChangeFirstname = useCallback((value?: string) => {
@@ -67,8 +68,8 @@ const ProfilePage = memo((props: ProfilePageProps) => {
     }, [dispatch]);
 
     const onChangeAge = useCallback((value?: string) => {
-        if (/^\d+$/.test(value) || !value) {
-            dispatch(profileActions.updateProfile({ age: Number(value || 0) }));
+        if (/^\d+$/.test(value) || Number(value) === 0) {
+            dispatch(profileActions.updateProfile({ age: Number(value) }));
         }
     }, [dispatch]);
 
