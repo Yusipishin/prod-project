@@ -19,7 +19,9 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png?20141107110902",
       "views": 1052,
       "createdAt": "19.06.2024",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,30 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123",
+      "id": "90P_KUf"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "second messahheeeee",
+      "id": "plGtrfK"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "HELLOW!",
+      "id": "ihJDCyy"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "TEST",
+      "id": "V1f5qLr"
     }
   ],
   "users": [
@@ -118,14 +144,28 @@
       "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
     }
   ],
-  "profile": {
-    "first": "Алексей",
-    "lastname": "Юсипишин",
-    "age": 19,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Ухта",
-    "username": "admin",
-    "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Алексей",
+      "lastname": "Юсипишин",
+      "age": 19,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Ухта",
+      "username": "admin",
+      "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Алекс",
+      "lastname": "Юсипишин",
+      "age": 19,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "alexey",
+      "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
+    }
+  ]
 }
