@@ -5,7 +5,7 @@ import { StoreDecorator } from 'shared/config/storybook/StoreDecorator';
 import { ArticleDetails } from './ArticleDetails';
 
 export default {
-    title: 'entities/ArticleDetails',
+    title: 'entities/Article/ArticleDetails',
     component: ArticleDetails,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -21,6 +21,11 @@ const article: Article = {
     img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png?20141107110902',
     views: 1052,
     createdAt: '19.06.2024',
+    user: {
+        id: '1',
+        username: 'Alexey',
+        avatar: 'https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg',
+    },
     type: [ArticleType.IT],
     blocks: [
         {
