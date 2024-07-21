@@ -13,3 +13,7 @@ export {
 export {
     ArticleDetailsPageSchema,
 } from './model/types';
+
+export {
+    canEditArticle,
+} from './model/selectors/article';
