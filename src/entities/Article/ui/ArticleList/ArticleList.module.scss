@@ -8,4 +8,14 @@
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
+
+    .card {
+        height: 300px;
+        display: inline-flex;
+    }
+
+    .row {
+        gap: 30px;
+        display: flex;
+    }
 }
