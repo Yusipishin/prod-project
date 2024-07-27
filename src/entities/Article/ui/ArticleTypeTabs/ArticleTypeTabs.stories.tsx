@@ -1,4 +1,3 @@
-import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import { ArticleTypeTabs } from './ArticleTypeTabs';
@@ -15,5 +14,5 @@ const Template: ComponentStory<typeof ArticleTypeTabs> = (args) => <ArticleTypeT
 
 export const Normal = Template.bind({});
 Normal.args = {
-    
+
 };
