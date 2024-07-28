@@ -62,3 +62,17 @@ SizeL.args = {
     text: 'Random text text text text',
     size: TextSize.L,
 };
+
+export const SizeM = Template.bind({});
+SizeM.args = {
+    title: 'Main Title',
+    text: 'Random text text text text',
+    size: TextSize.M,
+};
+
+export const SizeS = Template.bind({});
+SizeS.args = {
+    title: 'Main Title',
+    text: 'Random text text text text',
+    size: TextSize.S,
+};
