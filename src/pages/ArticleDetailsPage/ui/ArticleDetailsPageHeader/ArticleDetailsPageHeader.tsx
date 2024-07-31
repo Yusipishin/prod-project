@@ -7,7 +7,7 @@ import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button/Button';
 import { HStack } from 'shared/ui/Stack';
-import { canEditArticle } from '../../model/selectors/article';
+import { getCanEditArticle } from '../../model/selectors/article';
 
 interface ArticleDetailsPageHeaderProps {
     className?: string;
@@ -18,7 +18,7 @@ export const ArticleDetailsPageHeader = memo((props: ArticleDetailsPageHeaderPro
     const { t } = useTranslation();
     const navigate = useNavigate();
     const article = useSelector(getArticleDetailsData);
-    const canEdit = useSelector(canEditArticle);
+    const canEdit = useSelector(getCanEditArticle);
 
     const onBackToList = useCallback(() => {
         navigate(RoutePath.articles);

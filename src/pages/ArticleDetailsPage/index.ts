@@ -15,5 +15,5 @@ export {
 } from './model/types';
 
 export {
-    canEditArticle,
+    getCanEditArticle,
 } from './model/selectors/article';
