@@ -15,7 +15,7 @@ export function RequireAuth({ children, roles }: RequireAuthProps) {
     const userRoles = useSelector(getUserRoles);
 
     const hasRequiredRoles = useMemo(() => {
-        if (!roles) return false;
+        if (!roles) return true;
 
         return roles.some((requiredRole) => userRoles?.includes(requiredRole));
     }, [roles, userRoles]);
