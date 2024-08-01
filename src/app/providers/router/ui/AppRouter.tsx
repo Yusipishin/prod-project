@@ -7,22 +7,21 @@ import { PageLoader } from 'widgets/PageLoader';
 import { RequireAuth } from './RequireAuth';
 
 const AppRouter = () => {
-    const renderWithWrapper = useCallback((route: AppRoutesProps) => {
-        const element = (
-            // eslint-disable-next-line
-            <>
-                {route.element}
-            </>
-        );
-
-        return (
-            <Route
-                key={route.path}
-                path={route.path}
-                element={route.authOnly ? <RequireAuth>{element}</RequireAuth> : element}
-            />
-        );
-    }, []);
+    const renderWithWrapper = useCallback((route: AppRoutesProps) => (
+        <Route
+            key={route.path}
+            path={route.path}
+            element={route.authOnly
+                ? (
+                    <RequireAuth
+                        roles={route.roles}
+                    >
+                        {route.element as JSX.Element}
+                    </RequireAuth>
+                )
+                : route.element}
+        />
+    ), []);
 
     return (
         <Suspense fallback={<PageLoader />}>

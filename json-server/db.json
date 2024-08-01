@@ -469,7 +469,7 @@
       ]
     },
     {
-      "id": "19",
+      "id": "20",
       "title": "Научная стать!!",
       "subtitle": "Наука!?",
       "img": "https://cs14.pikabu.ru/post_img/big/2023/08/09/1/1691538189131631009.jpg",
@@ -560,14 +560,21 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": ["ADMIN"],
       "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": ["USER"],
+      "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roles": ["MANAGER"],
       "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
     }
   ],
