@@ -1,8 +1,8 @@
-import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import MainPage from './MainPage';
 
 export default {
@@ -14,6 +14,7 @@ export default {
     args: {
         to: '/',
     },
+    decorators: [StoreDecorator({})],
 } as ComponentMeta<typeof MainPage>;
 
 const Template: ComponentStory<typeof MainPage> = () => <MainPage />;
