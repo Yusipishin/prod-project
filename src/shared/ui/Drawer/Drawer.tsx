@@ -1,7 +1,7 @@
 import {
     memo, ReactNode, useCallback, useEffect,
 } from 'react';
-import { useAnimationLibs } from 'shared/lib/components/AnimationProvider';
+import { useAnimationLibs } from '@/shared/lib/components/AnimationProvider';
 import { classNames } from '../../lib/classNames/classNames';
 import { Overlay } from '../Overlay/Overlay';
 import { Portal } from '../Portal/Portal';

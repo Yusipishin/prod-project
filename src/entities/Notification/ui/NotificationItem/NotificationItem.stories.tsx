@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof NotificationItem> = (args) => <Notificatio
 
 export const Normal = Template.bind({});
 Normal.args = {
-    
+
 };
