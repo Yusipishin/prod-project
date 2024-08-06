@@ -641,5 +641,71 @@
       "username": "alexey",
       "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья!",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 2,
+      "feedback": "Хорошая статья!",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "rate": 5,
+      "userId": "1",
+      "articleId": "8",
+      "feedback": "",
+      "id": "E8DgQN8"
+    },
+    {
+      "rate": 1,
+      "userId": "1",
+      "articleId": "16",
+      "feedback": "",
+      "id": "EnsA7Fd"
+    },
+    {
+      "rate": 5,
+      "userId": "1",
+      "articleId": "13",
+      "feedback": "круто!",
+      "id": "dDIgS0v"
+    },
+    {
+      "rate": 2,
+      "userId": "1",
+      "articleId": "18",
+      "feedback": "",
+      "id": "Zp8PJws"
+    },
+    {
+      "rate": 2,
+      "userId": "1",
+      "articleId": "19",
+      "feedback": "",
+      "id": "NR547bV"
+    },
+    {
+      "rate": 1,
+      "userId": "1",
+      "articleId": "17",
+      "id": "ZR60QsR"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "rate": 3,
+      "userId": "1",
+      "profileId": "2",
+      "feedback": "Крутой парень!",
+      "id": 1
+    }
   ]
 }

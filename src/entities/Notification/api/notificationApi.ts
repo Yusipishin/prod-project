@@ -9,7 +9,6 @@ const notificationApi = rtkApi.injectEndpoints({
             }),
         }),
     }),
-    overrideExisting: false,
 });
 
 export const useNotifications = notificationApi.useGetNotificationsQuery;

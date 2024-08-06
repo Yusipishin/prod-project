@@ -11,16 +11,21 @@ interface CardProps extends ButtonHTMLAttributes<HTMLDivElement> {
     className?: string;
     children: ReactNode;
     theme?: CardTheme;
+    max?: boolean;
 }
 
 export const Card = memo((props: CardProps) => {
     const {
-        className, children, theme = CardTheme.NORMAL, ...otherProps
+        max,
+        className,
+        children,
+        theme = CardTheme.NORMAL,
+        ...otherProps
     } = props;
 
     return (
         <div
-            className={classNames(cls.Card, {}, [className, cls[theme]])}
+            className={classNames(cls.Card, { [cls.maxWidth]: max }, [className, cls[theme]])}
             {...otherProps}
         >
             {children}
