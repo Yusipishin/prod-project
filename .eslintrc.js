@@ -64,7 +64,17 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'yusipishin/path-checker': ['error', { alias: '@' }],
-        'yusipishin/public-api-imports': ['error', { alias: '@' }],
+        'yusipishin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: [
+                    '**/*.test.*',
+                    '**/*.story.*',
+                    '**/StoreDecorator.tsx',
+                ],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
