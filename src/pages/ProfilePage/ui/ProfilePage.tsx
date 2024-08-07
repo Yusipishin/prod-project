@@ -1,12 +1,12 @@
 import { memo } from 'react';
-import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { getUserAuthData } from '@/entities/User';
 import { EditableProfileCard, getProfileError } from '@/features/editableProfileCard';
+import { ProfileRating } from '@/features/profileRating';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { VStack } from '@/shared/ui/Stack/VStack/VStack';
-import { Page } from '@/widgets/Page/Page';
-import { ProfileRating } from '@/features/profileRating';
-import { getUserAuthData } from '@/entities/User';
+import { Page } from '@/widgets/Page';
 
 interface ProfilePageProps {
     className?: string;
