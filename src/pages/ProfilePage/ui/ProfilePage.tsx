@@ -5,7 +5,7 @@ import { getUserAuthData } from '@/entities/User';
 import { EditableProfileCard, getProfileError } from '@/features/editableProfileCard';
 import { ProfileRating } from '@/features/profileRating';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { VStack } from '@/shared/ui/Stack/VStack/VStack';
+import { VStack } from '@/shared/ui/Stack';
 import { Page } from '@/widgets/Page';
 
 interface ProfilePageProps {
