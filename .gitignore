@@ -1,6 +1,6 @@
 /build
 /storybook-static
-/reports
+/reports/unit
 
 # Logs
 logs
