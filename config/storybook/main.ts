@@ -32,13 +32,6 @@ export default {
             buildLocales: '',
         };
 
-        config.resolve = {
-            ...config.resolve,
-            alias: {
-                ...config.resolve!.alias,
-            },
-        };
-
         config.resolve!.modules!.push(paths.src);
         config.resolve!.extensions!.push('.ts', '.tsx');
         config.resolve!.alias = {
