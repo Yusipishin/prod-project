@@ -616,6 +616,15 @@
         "MANAGER"
       ],
       "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
     }
   ],
   "profile": [
