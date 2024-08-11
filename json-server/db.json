@@ -649,6 +649,17 @@
       "city": "Moscow",
       "username": "alexey",
       "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
+    },
+    {
+      "id": "4",
+      "first": "Test",
+      "lastname": "User",
+      "age": 29,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "testuser",
+      "avatar": "https://99px.ru/sstorage/1/2024/05/image_12105241118153001870.jpg"
     }
   ],
   "article-ratings": [
