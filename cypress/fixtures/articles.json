@@ -7,9 +7,7 @@
         "views": 355,
         "createdAt": "05.02.2023",
         "userId": "1",
-        "type": [
-            "IT"
-        ],
+        "type": ["IT"],
         "blocks": [
             {
                 "id": "1",
@@ -26,9 +24,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     },
@@ -40,9 +36,7 @@
         "views": 1524,
         "createdAt": "05.04.2023",
         "userId": "1",
-        "type": [
-            "IT"
-        ],
+        "type": ["IT"],
         "blocks": [
             {
                 "id": "1",
@@ -59,9 +53,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     },
@@ -73,9 +65,7 @@
         "views": 1652,
         "createdAt": "07.03.2024",
         "userId": "1",
-        "type": [
-            "IT"
-        ],
+        "type": ["IT"],
         "blocks": [
             {
                 "id": "1",
@@ -92,9 +82,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     },
@@ -106,9 +94,7 @@
         "views": 3786,
         "createdAt": "08.10.2020",
         "userId": "1",
-        "type": [
-            "IT"
-        ],
+        "type": ["IT"],
         "blocks": [
             {
                 "id": "1",
@@ -125,9 +111,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     },
@@ -139,9 +123,7 @@
         "views": 2753,
         "createdAt": "09.09.2024",
         "userId": "1",
-        "type": [
-            "IT"
-        ],
+        "type": ["IT"],
         "blocks": [
             {
                 "id": "1",
@@ -158,9 +140,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     },
@@ -172,9 +152,7 @@
         "views": 2723,
         "createdAt": "09.09.2024",
         "userId": "1",
-        "type": [
-            "ECONOMICS"
-        ],
+        "type": ["ECONOMICS"],
         "blocks": [
             {
                 "id": "1",
@@ -191,9 +169,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     },
@@ -205,9 +181,7 @@
         "views": 164,
         "createdAt": "12.07.2022",
         "userId": "1",
-        "type": [
-            "IT"
-        ],
+        "type": ["IT"],
         "blocks": [
             {
                 "id": "1",
@@ -224,9 +198,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     },
@@ -238,9 +210,7 @@
         "views": 75,
         "createdAt": "14.06.2024",
         "userId": "1",
-        "type": [
-            "IT"
-        ],
+        "type": ["IT"],
         "blocks": [
             {
                 "id": "1",
@@ -257,9 +227,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     },
@@ -271,9 +239,7 @@
         "views": 253,
         "createdAt": "15.01.2020",
         "userId": "1",
-        "type": [
-            "IT"
-        ],
+        "type": ["IT"],
         "blocks": [
             {
                 "id": "1",
@@ -290,9 +256,7 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
+            "roles": ["ADMIN"],
             "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
         }
     }

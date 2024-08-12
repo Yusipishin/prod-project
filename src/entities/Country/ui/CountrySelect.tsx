@@ -20,12 +20,7 @@ const options = [
 
 export const CountrySelect = memo((props: CountrySelectProps) => {
     const { t } = useTranslation();
-    const {
-        className,
-        onChange,
-        value,
-        readonly,
-    } = props;
+    const { className, onChange, value, readonly } = props;
 
     return (
         <ListBox

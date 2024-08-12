@@ -31,7 +31,7 @@ interface TextProps {
     'data-testid'?: string;
 }
 
-type HeaderTagType = 'h1' | 'h2' | 'h3'
+type HeaderTagType = 'h1' | 'h2' | 'h3';
 
 const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
     [TextSize.S]: 'h3',
@@ -52,12 +52,7 @@ export const Text = memo((props: TextProps) => {
 
     const HeaderTag = mapSizeToHeaderTag[size];
 
-    const additional = [
-        className,
-        cls[theme],
-        cls[align],
-        cls[size],
-    ];
+    const additional = [className, cls[theme], cls[align], cls[size]];
 
     return (
         <div className={classNames(cls.Text, {}, additional)}>
@@ -70,13 +65,10 @@ export const Text = memo((props: TextProps) => {
                 </HeaderTag>
             )}
             {text && (
-                <p
-                    className={cls.text}
-                    data-testid={`${dataTestId}.Paragraph`}
-                >
+                <p className={cls.text} data-testid={`${dataTestId}.Paragraph`}>
                     {text}
                 </p>
-            ) }
+            )}
         </div>
     );
 });

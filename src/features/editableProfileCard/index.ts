@@ -1,17 +1,11 @@
 export { EditableProfileCard } from './ui/EditableProfileCard/EditableProfileCard';
 export type { ProfileSchema } from './model/types/editableProfileCardSchema';
 
-export {
-    profileActions,
-} from './model/slice/profileSlice';
+export { profileActions } from './model/slice/profileSlice';
 
-export {
-    fetchProfileData,
-} from './model/services/fetchProfileData/fetchProfileData';
+export { fetchProfileData } from './model/services/fetchProfileData/fetchProfileData';
 
-export {
-    updateProfileData,
-} from './model/services/updateProfileData/updateProfileData';
+export { updateProfileData } from './model/services/updateProfileData/updateProfileData';
 
 export { getProfileData } from './model/selectors/getProfileData/getProfileData';
 export { getProfileError } from './model/selectors/getProfileError/getProfileError';

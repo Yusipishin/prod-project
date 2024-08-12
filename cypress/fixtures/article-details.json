@@ -6,9 +6,7 @@
     "views": 355,
     "createdAt": "05.02.2023",
     "userId": "1",
-    "type": [
-        "IT"
-    ],
+    "type": ["IT"],
     "blocks": [
         {
             "id": "1",
@@ -21,14 +19,11 @@
             ]
         }
     ],
-    "user": 
-    {
+    "user": {
         "id": "1",
         "username": "admin",
         "password": "123",
-        "roles": [
-            "ADMIN"
-        ],
+        "roles": ["ADMIN"],
         "avatar": "https://99px.ru/sstorage/1/2024/06/image_11506241039513650770.jpg"
     }
 }

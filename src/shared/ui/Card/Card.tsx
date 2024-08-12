@@ -25,7 +25,10 @@ export const Card = memo((props: CardProps) => {
 
     return (
         <div
-            className={classNames(cls.Card, { [cls.maxWidth]: max }, [className, cls[theme]])}
+            className={classNames(cls.Card, { [cls.maxWidth]: max }, [
+                className,
+                cls[theme],
+            ])}
             {...otherProps}
         >
             {children}

@@ -2,13 +2,13 @@ import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
-import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import {
+    DynamicModuleLoader,
+    ReducersList,
+} from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import {
-    Text,
-    TextTheme,
-} from '@/shared/ui/Text';
+import { Text, TextTheme } from '@/shared/ui/Text';
 import { Page } from '@/widgets/Page';
 import { getArticlesPageError } from '../../model/selectors/articlesPageSelectors';
 import { fetchNextArticlesPage } from '../../model/services/fetchNextArticlesPage/fetchNextArticlesPage';
@@ -28,9 +28,7 @@ const reducers: ReducersList = {
 };
 
 const ArticlesPage = memo((props: ArticlesPageProps) => {
-    const {
-        className,
-    } = props;
+    const { className } = props;
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
     const error = useSelector(getArticlesPageError);
@@ -46,10 +44,7 @@ const ArticlesPage = memo((props: ArticlesPageProps) => {
 
     if (error) {
         return (
-            <Text
-                title={t('Что-то пошло не так...')}
-                theme={TextTheme.ERROR}
-            />
+            <Text title={t('Что-то пошло не так...')} theme={TextTheme.ERROR} />
         );
     }
 

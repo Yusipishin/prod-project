@@ -18,12 +18,7 @@ const options = [
 
 export const CurrencySelect = memo((props: CurrencySelectProps) => {
     const { t } = useTranslation();
-    const {
-        className,
-        onChange,
-        value,
-        readonly,
-    } = props;
+    const { className, onChange, value, readonly } = props;
 
     return (
         <ListBox

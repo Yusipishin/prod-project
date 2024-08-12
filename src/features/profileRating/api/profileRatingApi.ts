@@ -3,12 +3,12 @@ import { rtkApi } from '@/shared/api/rtkApi';
 
 interface GetProfileRatingArg {
     userId: string;
-    profileId: string
+    profileId: string;
 }
 
 interface RateProfileArg {
     userId: string;
-    profileId: string
+    profileId: string;
     rate: number;
     feedback?: string;
 }

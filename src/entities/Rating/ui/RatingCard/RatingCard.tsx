@@ -1,14 +1,14 @@
 import { memo, useCallback, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { Card } from '@/shared/ui/Card';
-import { HStack, VStack } from '@/shared/ui/Stack';
-import { Text } from '@/shared/ui/Text';
-import { StarRating } from '@/shared/ui/StarRating';
-import { Modal } from '@/shared/ui/Modal';
-import { Input } from '@/shared/ui/Input';
+import { useTranslation } from 'react-i18next';
 import { Button, ButtonSize, ButtonTheme } from '@/shared/ui/Button';
+import { Card } from '@/shared/ui/Card';
 import { Drawer } from '@/shared/ui/Drawer';
+import { Input } from '@/shared/ui/Input';
+import { Modal } from '@/shared/ui/Modal';
+import { HStack, VStack } from '@/shared/ui/Stack';
+import { StarRating } from '@/shared/ui/StarRating';
+import { Text } from '@/shared/ui/Text';
 
 interface RatingCardProps {
     className?: string;
@@ -23,21 +23,29 @@ interface RatingCardProps {
 export const RatingCard = memo((props: RatingCardProps) => {
     const { t } = useTranslation();
     const {
-        className, feedbackTitle, hasFeedback,
-        onAccept, onCancel, title, rate = 0,
+        className,
+        feedbackTitle,
+        hasFeedback,
+        onAccept,
+        onCancel,
+        title,
+        rate = 0,
     } = props;
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [starsCount, setStarsCount] = useState(rate);
     const [feedback, setFeedback] = useState('');
 
-    const onSelectStars = useCallback((selectedStarsCount: number) => {
-        setStarsCount(selectedStarsCount);
-        if (hasFeedback) {
-            setIsModalOpen(true);
-        } else {
-            onAccept?.(selectedStarsCount);
-        }
-    }, [hasFeedback, onAccept]);
+    const onSelectStars = useCallback(
+        (selectedStarsCount: number) => {
+            setStarsCount(selectedStarsCount);
+            if (hasFeedback) {
+                setIsModalOpen(true);
+            } else {
+                onAccept?.(selectedStarsCount);
+            }
+        },
+        [hasFeedback, onAccept],
+    );
 
     const acceptHandler = useCallback(() => {
         setIsModalOpen(false);
@@ -65,17 +73,28 @@ export const RatingCard = memo((props: RatingCardProps) => {
         <Card className={className} max data-testid="RatingCard">
             <VStack align="center" gap="8">
                 <Text title={starsCount ? t('Спасибо за оценку!') : title} />
-                <StarRating selectedStars={starsCount} size={40} onSelect={onSelectStars} />
+                <StarRating
+                    selectedStars={starsCount}
+                    size={40}
+                    onSelect={onSelectStars}
+                />
             </VStack>
             <BrowserView>
                 <Modal isOpen={isModalOpen} lazy onClose={cancelHandler}>
                     <VStack max gap="32">
                         {modalContent}
                         <HStack max gap="16" justify="end">
-                            <Button data-testid="RatingCard.Close" onClick={cancelHandler} theme={ButtonTheme.OUTLINE_RED}>
+                            <Button
+                                data-testid="RatingCard.Close"
+                                onClick={cancelHandler}
+                                theme={ButtonTheme.OUTLINE_RED}
+                            >
                                 {t('Закрыть')}
                             </Button>
-                            <Button data-testid="RatingCard.Send" onClick={acceptHandler}>
+                            <Button
+                                data-testid="RatingCard.Send"
+                                onClick={acceptHandler}
+                            >
                                 {t('Отправить')}
                             </Button>
                         </HStack>
@@ -86,7 +105,11 @@ export const RatingCard = memo((props: RatingCardProps) => {
                 <Drawer isOpen={isModalOpen} lazy onClose={cancelHandler}>
                     <VStack gap="32">
                         {modalContent}
-                        <Button fullWidth onClick={acceptHandler} size={ButtonSize.L}>
+                        <Button
+                            fullWidth
+                            onClick={acceptHandler}
+                            size={ButtonSize.L}
+                        >
                             {t('Отправить')}
                         </Button>
                     </VStack>
