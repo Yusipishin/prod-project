@@ -22,3 +22,5 @@ describe('Пользователь заходит на страницу проф
         cy.getByTestId('ProfileCard.lastname').should('have.value', newLastname);
     });
 });
+
+export {};

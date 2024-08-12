@@ -35,10 +35,9 @@
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
   },
-  "exclude": ["cypress.config.ts", "cypress", "node_modules"],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
 }

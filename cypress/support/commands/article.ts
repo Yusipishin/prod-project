@@ -10,7 +10,6 @@ const defaultArticle = {
     type: [
         'ECONOMICS',
     ],
-    blocks: [],
 };
 
 export const createArticle = (article?: Article) => cy.request({
