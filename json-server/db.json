@@ -513,6 +513,149 @@
           ]
         }
       ]
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "tLIUAjT"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "yQY0n4V"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "SgAENWr"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "fsi__ae"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "kVnjKcS"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "E0leWEy"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "5taRbU6"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "Ydpkv5v"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "yRkDsjC"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "Kw1BUUo"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Экономика!?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 2723,
+      "createdAt": "09.09.2024",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "Ilx0GkK"
     }
   ],
   "comments": [
@@ -587,6 +730,18 @@
       "userId": "2",
       "text": "erg",
       "id": "-AYrRQS"
+    },
+    {
+      "articleId": "E0leWEy",
+      "userId": "4",
+      "text": "text",
+      "id": "L03p__l"
+    },
+    {
+      "articleId": "Ydpkv5v",
+      "userId": "4",
+      "text": "text",
+      "id": "8TEkEsQ"
     }
   ],
   "users": [
