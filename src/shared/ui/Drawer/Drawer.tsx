@@ -75,7 +75,7 @@ export const DrawerContent = memo((props: DrawerProps) => {
     const display = y.to((py) => (py < height ? 'block' : 'none'));
 
     return (
-        <Portal>
+        <Portal container={document.getElementById('app') ?? document.body}>
             <div
                 className={classNames(cls.Drawer, { [cls.opened]: isOpen }, [
                     className,
