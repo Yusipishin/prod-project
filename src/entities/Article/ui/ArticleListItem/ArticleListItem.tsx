@@ -37,7 +37,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
             <Icon Svg={EyeIcon} />
         </>
     );
-    const textBlock = article.blocks.find(
+    const textBlock = article.blocks?.find(
         (block) => block.type === ArticleBlockType.TEXT,
     ) as ArticleTextBlock;
 

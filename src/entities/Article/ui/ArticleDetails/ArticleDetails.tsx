@@ -132,7 +132,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
                         <Text text={article?.createdAt} />
                     </HStack>
                 </VStack>
-                {article?.blocks.map(renderBlock)}
+                {article?.blocks?.map(renderBlock)}
             </>
         );
     }
