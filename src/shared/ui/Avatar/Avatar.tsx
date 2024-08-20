@@ -26,6 +26,7 @@ export const Avatar = (props: AvatarProps) => {
     );
 
     const fallback = <Skeleton width={size} height={size} border="50%" />;
+
     const errorFallback = (
         <Icon
             inverted={falllbackInverted}

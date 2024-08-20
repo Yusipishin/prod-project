@@ -1,18 +1,27 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import { Popover } from './Popover';
+import { Button } from '../../../Button';
+import { VStack } from '../../../Stack';
 
-export default {
-    title: 'shared/Popover',
+const meta: Meta<typeof Popover> = {
     component: Popover,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof Popover>;
+    title: 'shared/Popover',
+};
+export default meta;
 
-const Template: ComponentStory<typeof Popover> = (args) => (
-    <Popover {...args} />
+type Story = StoryObj<typeof meta>;
+
+const content = (
+    <VStack gap="16" max>
+        <div>ITEM 1</div>
+        <div>ITEM 2</div>
+        <div>ITEM 3</div>
+    </VStack>
 );
 
-export const Normal = Template.bind({});
-Normal.args = {};
+export const Primary: Story = {
+    args: {
+        trigger: <Button>Open</Button>,
+        children: content,
+    },
+};

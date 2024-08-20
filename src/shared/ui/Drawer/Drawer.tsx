@@ -13,15 +13,14 @@ interface DrawerProps {
     children: ReactNode;
     isOpen?: boolean;
     onClose?: () => void;
-    lazy?: boolean;
+    height?: number;
 }
 
-const height = window.innerWidth - 100;
-
 export const DrawerContent = memo((props: DrawerProps) => {
+    const { className, children, isOpen, onClose, height } = props;
+    const heightDrawer = height ?? window.innerWidth - 100;
     const { Spring, Gesture } = useAnimationLibs();
-    const [{ y }, api] = Spring.useSpring(() => ({ y: height }));
-    const { className, children, isOpen, onClose, lazy } = props;
+    const [{ y }, api] = Spring.useSpring(() => ({ y: heightDrawer }));
 
     const openDrawer = useCallback(() => {
         api.start({ y: 0, immediate: false });
@@ -35,7 +34,7 @@ export const DrawerContent = memo((props: DrawerProps) => {
 
     const close = (velocity = 0) => {
         api.start({
-            y: height,
+            y: heightDrawer,
             immediate: false,
             config: { ...Spring.config.stiff, velocity },
             onResolve: onClose,
@@ -53,7 +52,7 @@ export const DrawerContent = memo((props: DrawerProps) => {
             if (my < -70) cancel();
 
             if (last) {
-                if (my > height * 0.5 || (vy > 0.5 && dy > 0)) {
+                if (my > heightDrawer * 0.5 || (vy > 0.5 && dy > 0)) {
                     close(vy);
                 } else {
                     openDrawer();
@@ -72,10 +71,10 @@ export const DrawerContent = memo((props: DrawerProps) => {
 
     if (!isOpen) return null;
 
-    const display = y.to((py) => (py < height ? 'block' : 'none'));
+    const display = y.to((py) => (py < heightDrawer ? 'block' : 'none'));
 
     return (
-        <Portal container={document.getElementById('app') ?? document.body}>
+        <Portal container={document.querySelector('.app') ?? document.body}>
             <div
                 className={classNames(cls.Drawer, { [cls.opened]: isOpen }, [
                     className,
@@ -86,7 +85,7 @@ export const DrawerContent = memo((props: DrawerProps) => {
                     className={cls.sheet}
                     style={{
                         display,
-                        bottom: `calc(-100vh + ${height - 100}px)`,
+                        bottom: `calc(-100vh + ${heightDrawer - 100}px)`,
                         y,
                     }}
                     {...bind()}

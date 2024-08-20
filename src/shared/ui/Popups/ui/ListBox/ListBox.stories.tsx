@@ -1,13 +1,9 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import { ListBox } from './ListBox';
 
-export default {
-    title: 'shared/ListBox',
+const meta: Meta<typeof ListBox> = {
     component: ListBox,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
+    title: 'shared/ListBox',
     decorators: [
         (Story) => (
             <div style={{ padding: 200 }}>
@@ -15,62 +11,66 @@ export default {
             </div>
         ),
     ],
-} as ComponentMeta<typeof ListBox>;
+};
+export default meta;
 
-const Template: ComponentStory<typeof ListBox> = (args) => (
-    <ListBox {...args} />
-);
+type Story = StoryObj<typeof meta>;
 
-export const Normal = Template.bind({});
-Normal.args = {
-    value: 'click',
-    items: [
-        { content: '12333333333333333333333333', valie: '123' },
-        { content: 'gertherth455', valie: '34343' },
-        { content: '232523grgtrtg35g34g', valie: '2354' },
-    ],
+export const Primary: Story = {
+    args: {
+        value: 'click',
+        items: [
+            { content: '12333333333333333333333333', value: '123' },
+            { content: 'gertherth455', value: '34343' },
+            { content: '232523grgtrtg35g34g', value: '2354' },
+        ],
+    },
 };
 
-export const topLeft = Template.bind({});
-topLeft.args = {
-    value: 'click',
-    direction: 'top left',
-    items: [
-        { content: '12333333333333333333333333', valie: '123' },
-        { content: 'gertherth455', valie: '34343' },
-        { content: '232523grgtrtg35g34g', valie: '2354' },
-    ],
+export const TopLeft: Story = {
+    args: {
+        value: 'click',
+        direction: 'top left',
+        items: [
+            { content: '12333333333333333333333333', value: '123' },
+            { content: 'gertherth455', value: '34343' },
+            { content: '232523grgtrtg35g34g', value: '2354' },
+        ],
+    },
 };
 
-export const topRight = Template.bind({});
-topRight.args = {
-    value: 'click',
-    direction: 'top right',
-    items: [
-        { content: '12333333333333333333333333', valie: '123' },
-        { content: 'gertherth455', valie: '34343' },
-        { content: '232523grgtrtg35g34g', valie: '2354' },
-    ],
+export const TopRight: Story = {
+    args: {
+        value: 'click',
+        direction: 'top right',
+        items: [
+            { content: '12333333333333333333333333', value: '123' },
+            { content: 'gertherth455', value: '34343' },
+            { content: '232523grgtrtg35g34g', value: '2354' },
+        ],
+    },
 };
 
-export const bottomLeft = Template.bind({});
-bottomLeft.args = {
-    value: 'click',
-    direction: 'bottom left',
-    items: [
-        { content: '12333333333333333333333333', valie: '123' },
-        { content: 'gertherth455', valie: '34343' },
-        { content: '232523grgtrtg35g34g', valie: '2354' },
-    ],
+export const BottomLeft: Story = {
+    args: {
+        value: 'click',
+        direction: 'bottom left',
+        items: [
+            { content: '12333333333333333333333333', value: '123' },
+            { content: 'gertherth455', value: '34343' },
+            { content: '232523grgtrtg35g34g', value: '2354' },
+        ],
+    },
 };
 
-export const bottomRight = Template.bind({});
-bottomRight.args = {
-    value: 'click',
-    direction: 'bottom right',
-    items: [
-        { content: '12333333333333333333333333', valie: '123' },
-        { content: 'gertherth455', valie: '34343' },
-        { content: '232523grgtrtg35g34g', valie: '2354' },
-    ],
+export const BottomRight: Story = {
+    args: {
+        value: 'click',
+        direction: 'bottom right',
+        items: [
+            { content: '12333333333333333333333333', value: '123' },
+            { content: 'gertherth455', value: '34343' },
+            { content: '232523grgtrtg35g34g', value: '2354' },
+        ],
+    },
 };

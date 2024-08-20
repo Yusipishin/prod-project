@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ArticleDetailsPageHeader } from './ArticleDetailsPageHeader';
+import AdminPanelPage from './AdminPanelPage';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
 
-const meta: Meta<typeof ArticleDetailsPageHeader> = {
-    component: ArticleDetailsPageHeader,
-    title: 'pages/ArticleDetailsPage/ArticleDetailsPageHeader',
+const meta: Meta<typeof AdminPanelPage> = {
+    component: AdminPanelPage,
+    title: 'pages/AdminPanelPage',
 };
 export default meta;
 

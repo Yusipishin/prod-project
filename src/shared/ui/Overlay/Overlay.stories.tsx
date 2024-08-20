@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Loader } from './Loader';
+import { Overlay } from './Overlay';
 
-const meta: Meta<typeof Loader> = {
-    component: Loader,
-    title: 'shared/Loader',
+const meta: Meta<typeof Overlay> = {
+    component: Overlay,
+    title: 'shared/Overlay',
 };
 export default meta;
 

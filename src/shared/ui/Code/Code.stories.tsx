@@ -1,33 +1,30 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import { Code } from './Code';
 
-export default {
-    title: 'shared/Code',
+const meta: Meta<typeof Code> = {
     component: Code,
-    argTypes: {
-        backgroundColor: { control: 'color' },
+    title: 'shared/Code',
+};
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Primary: Story = {
+    args: {
+        text:
+            "import React from 'react'\n" +
+            "import { ComponentMeta, ComponentStory } from '@storybook/react';\n" +
+            '\n' +
+            "import { Code } from './Code';" +
+            '\n' +
+            'export default {' +
+            "    title: 'shared/Code',\n" +
+            '    component: Code,\n' +
+            '    argTypes: {\n' +
+            "        backgroundColor: { control: 'color' },\n" +
+            '    },\n' +
+            '} as ComponentMeta<typeof Code>;\n' +
+            '\n' +
+            'const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;',
     },
-} as ComponentMeta<typeof Code>;
-
-const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;
-
-export const Normal = Template.bind({});
-Normal.args = {
-    text:
-        "import React from 'react'\n" +
-        "import { ComponentMeta, ComponentStory } from '@storybook/react';\n" +
-        '\n' +
-        "import { Code } from './Code';" +
-        '\n' +
-        'export default {' +
-        "    title: 'shared/Code',\n" +
-        '    component: Code,\n' +
-        '    argTypes: {\n' +
-        "        backgroundColor: { control: 'color' },\n" +
-        '    },\n' +
-        '} as ComponentMeta<typeof Code>;\n' +
-        '\n' +
-        'const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;',
 };

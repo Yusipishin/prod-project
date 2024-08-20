@@ -1,24 +1,20 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-
-import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
+import { Meta, StoryObj } from '@storybook/react';
+import { ArticleDetails } from './ArticleDetails';
+import { Article } from '../../model/types/article';
 import {
     ArticleBlockType,
     ArticleType,
 } from '../../model/consts/articleConsts';
-import { Article } from '../../model/types/article';
-import { ArticleDetails } from './ArticleDetails';
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
 
-export default {
-    title: 'entities/Article/ArticleDetails',
+const meta: Meta<typeof ArticleDetails> = {
     component: ArticleDetails,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof ArticleDetails>;
+    title: 'entities/ArticleDetails',
+};
 
-const Template: ComponentStory<typeof ArticleDetails> = (args) => (
-    <ArticleDetails {...args} />
-);
+type Story = StoryObj<typeof meta>;
+
+export default meta;
 
 const article: Article = {
     id: '1',
@@ -58,32 +54,35 @@ const article: Article = {
     ],
 };
 
-export const Normal = Template.bind({});
-Normal.args = {};
-Normal.decorators = [
-    StoreDecorator({
-        articleDetails: {
-            data: article,
-        },
-    }),
-];
+export const Normal: Story = {
+    args: {},
+    decorators: [
+        StoreDecorator({
+            articleDetails: {
+                data: article,
+            },
+        }),
+    ],
+};
 
-export const Loading = Template.bind({});
-Loading.args = {};
-Loading.decorators = [
-    StoreDecorator({
-        articleDetails: {
-            isLoading: true,
-        },
-    }),
-];
+export const Loading: Story = {
+    args: {},
+    decorators: [
+        StoreDecorator({
+            articleDetails: {
+                isLoading: true,
+            },
+        }),
+    ],
+};
 
-export const Error = Template.bind({});
-Error.args = {};
-Error.decorators = [
-    StoreDecorator({
-        articleDetails: {
-            error: 'error',
-        },
-    }),
-];
+export const Error: Story = {
+    args: {},
+    decorators: [
+        StoreDecorator({
+            articleDetails: {
+                error: 'error',
+            },
+        }),
+    ],
+};

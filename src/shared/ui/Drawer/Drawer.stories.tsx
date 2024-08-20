@@ -1,17 +1,27 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import { Drawer } from './Drawer';
+import { Text } from '../Text';
 
-export default {
-    title: 'shared/Drawer',
+const meta: Meta<typeof Drawer> = {
     component: Drawer,
-    argTypes: {
-        backgroundColor: { control: 'color' },
+    title: 'shared/Drawer',
+};
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+const content = (
+    <>
+        <Text title="Notification 1" />
+        <Text title="Notification 2" />
+        <Text title="Notification 3" />
+    </>
+);
+
+export const Primary: Story = {
+    args: {
+        isOpen: true,
+        children: content,
+        height: 300,
     },
-} as ComponentMeta<typeof Drawer>;
-
-const Template: ComponentStory<typeof Drawer> = (args) => <Drawer {...args} />;
-
-export const Normal = Template.bind({});
-Normal.args = {};
+};

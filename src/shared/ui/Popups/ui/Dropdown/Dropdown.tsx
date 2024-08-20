@@ -1,4 +1,4 @@
-import { Menu } from '@headlessui/react';
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Fragment, ReactNode } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
@@ -33,16 +33,16 @@ export function Dropdown(props: DropdownProps) {
                 popupCls.popup,
             ])}
         >
-            <Menu.Button className={popupCls.trigger}>{trigger}</Menu.Button>
-            <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
+            <MenuButton className={popupCls.trigger}>{trigger}</MenuButton>
+            <MenuItems className={classNames(cls.menu, {}, menuClasses)}>
                 {items.map((item, i) => {
-                    const content = ({ active }: { active: boolean }) => (
+                    const content = ({ focus }: { focus: boolean }) => (
                         <button
                             type="button"
                             onClick={item.onClick}
                             disabled={item.disabled}
                             className={classNames(cls.item, {
-                                [popupCls.active]: active,
+                                [popupCls.active]: focus,
                             })}
                         >
                             {item.content}
@@ -51,28 +51,28 @@ export function Dropdown(props: DropdownProps) {
 
                     if (item.href) {
                         return (
-                            <Menu.Item
+                            <MenuItem
                                 as={AppLink}
                                 to={item.href}
                                 disabled={item.disabled}
                                 key={`dropdown-key-${i}`}
                             >
                                 {content}
-                            </Menu.Item>
+                            </MenuItem>
                         );
                     }
 
                     return (
-                        <Menu.Item
+                        <MenuItem
                             as={Fragment}
                             disabled={item.disabled}
                             key={`dropdown-key-${i}`}
                         >
                             {content}
-                        </Menu.Item>
+                        </MenuItem>
                     );
                 })}
-            </Menu.Items>
+            </MenuItems>
         </Menu>
     );
 }
